@@ -96,7 +96,7 @@ void instructions() {
 void credits() {
 	cout << "Student Name" << setw(18) << "Student ID" << setw(10) << "Class" << setw(15) << "Tuto. Group" << endl;
 	cout << "Sarki Joshan" << setw(17) << "16098910A" << setw(10) << "104" << setw(6) << "D" << endl;
-	cout << "Lui Teng Yuen" << setw(17) << "17143494A" << setw(10) << "104" << setw(6) << "D" << endl;
+	cout << "Lui Teng Yuen" << setw(16) << "17143494A" << setw(10) << "104" << setw(6) << "D" << endl;
 
 
 

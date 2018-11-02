@@ -55,31 +55,36 @@ void settings() {
 		cout << "[3] Return to Game Menu" << endl;
 		cout << "*********************" << endl;
 		cin >> choice;
-
+		char ans;
+		system("cls");
 		switch (choice) {
 
 		case 1: cout << "There are " << numPlayers << " player(s) now, do you want to change it? (Y/N)";
-			if (choice == 'Y' || choice == 'y') {
+			cin >> ans;
+			if ( ans == 'Y' || ans == 'y') {
+				cout << "Input the number of players now: ";
 				int num1;
 				cin >> num1;
 				numPlayers = num1;
-			}
-			else break;
-		case 2: cout << "There are " << numHumanPlayers << " player(s) now, do you want to change it? (Y/N)";
-			if (choice == 'Y' || choice == 'y') {
+				cout << "The number of players now is " << numPlayers << endl;
+				cin.ignore();
+			}break;
+		case 2: cout << "There are " << numHumanPlayers << " human player(s) now, do you want to change it? (Y/N)";
+			cin >> ans;
+			if (ans == 'Y' || ans == 'y') {
+				cout << "Input the number of human players now: ";
 				int num2;
 				cin >> num2;
 				numHumanPlayers = num2;
-			}
-			else break;
-			break;
+				cout << "The number of human players now is " << numHumanPlayers << endl;
+				cin.ignore();
+			}break;
 		case 3:return;
 		default: cout << "Invalid input, please try again!" << endl; break;
 		}
 	} while (choice != 0);
 
 }
-
 void gameDemo() {
 
 }
